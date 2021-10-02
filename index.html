@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+
+    <title>keyboard!</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src='overhang.js-master/dist/overhang.min.js'></script>
+    <link href='overhang.js-master/dist/overhang.min.css' rel='stylesheet' type='text/css' >
+
+  </head>
+
+  <body>
+
+    <div class="container bg-grad mt5 ">
+        <div class="d-md-flex row">
+            <div class="col-md-8 text-center">
+                <div class="form-group">
+                    <label class=" mt5 mr5 text-secondary font-weight-bold font-size" for="#txtbox"> محل ورود پیام</label>
+                    <div class="input-group pt-3 mb-md-5 mt-2">
+                        <button class="btn btn-sm btn-info mx-5 font-size" id="key">کیبورد</button>
+                        <input class="form-control rounded font-italic ml-5 " id="txtbox" type="text" placeholder="پیام مورد نظر را وارد کنید">
+                    </div>
+                    <div class=" mt5 mb5 mx-3 py-4 collapse bg-dark rounded" id="keyboard"> 
+                        <button class="btn-sm  btn-size btn-outline-warning font-weight-bold" id="btnclear" type="button">clear</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn0" value="0" type="button">0</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn9" value="9" type="button">9</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn8" value="8" type="button">8</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn7" value="7" type="button">7</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn6" value="6" type="button">6</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn5" value="5" type="button">5</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn4" value="4" type="button">4</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn3" value="3" type="button">3</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn2" value="2" type="button">2</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn1" value="1" type="button">1</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn10" value="پ" type="button">پ</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn11" value="چ" type="button">چ</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn12" value="ج" type="button">ج</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn13" value="ح" type="button">ح</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn14" value="خ" type="button">خ</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn15" value="ه" type="button">ه</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn16" value="ع" type="button">ع</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn17" value="غ" type="button">غ</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn18" value="ف" type="button">ف</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn19" value="ق" type="button">ق</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn20" value="ث" type="button">ث</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn21" value="ص" type="button">ص</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn22" value="ض" type="button">ض</button>
+                        <button class="btn-sm  btn-size btn-outline-light text-dark" id="btn23" value=" " type="button" >spc</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn24" value="گ" type="button">گ</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn25" value="ک" type="button">ک</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn26" value="م" type="button">م</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn27" value="ن" type="button">ن</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn28" value="ت" type="button">ت</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn29" value="ا" type="button">ا</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn30" value="ل" type="button">ل</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn31" value="ب" type="button">ب</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn32" value="ی" type="button">ی</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn33" value="س" type="button">س</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn34" value="ش" type="button">ش</button>
+                        <button class="btn-sm  btn-size2 btn-outline-success font-weight-bold " id="enter" type="submit" >Enter</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold " id="btn35" value="؟" type="button">؟</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn36" value="." type="button">.</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn37" value="و" type="button">و</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn38" value="د" type="button">د</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn39" value="ذ" type="button">ذ</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn40" value="ر" type="button">ر</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn41" value="ز" type="button">ر</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn42" value="ژ" type="button">ژ</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn43" value="ط" type="button">ط</button>
+                        <button class="btn-sm  btn-size btn-outline-light font-weight-bold" id="btn44" value="ظ" type="button">ظ</button>                      
+                    </div>            
+                </div>
+            </div>
+            <div class="col-md-4 p-md-0 m-md-0" >
+                <h6 class="py-3 font-weight-bold text-light text-center bg-dark ">لیست پیام ها</h6>
+                <div id="messages"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#key").click(function(){
+                    $("#keyboard").toggle();
+            });
+
+            $("#txtbox").click(function(){
+                all("#btn0");all("#btn1");all("#btn2");all("#btn3");all("#btn4");
+                all("#btn5");all("#btn6");all("#btn7");all("#btn8");all("#btn9");
+                all("#btn10");all("#btn11");all("#btn12");all("#btn13");all("#btn14");
+                all("#btn15");all("#btn16");all("#btn17");all("#btn18");all("#btn19");
+                all("#btn20");all("#btn21");all("#btn22");all("#btn23");all("#btn24");
+                all("#btn25");all("#btn26");all("#btn27");all("#btn28");all("#btn29");
+                all("#btn30");all("#btn31");all("#btn32");all("#btn33");all("#btn34");
+                all("#btn35");all("#btn36");all("#btn37");all("#btn38");all("#btn39");
+                all("#btn40");all("#btn41");all("#btn42");all("#btn43");all("#btn44");
+
+                let inbox="";
+                function all(e){
+                    $(e).click(function(){
+                    var Temp=$(e).val();         
+                    inbox+=Temp;
+                    $("#txtbox").val(inbox);
+                    });
+                };
+            });
+
+            $("#btnclear").click(function(){
+                $("#txtbox").val("");
+            });
+
+            $("#enter").click (function(){
+                const message = $("#txtbox").val();
+
+                messageShow(message);
+
+                let msges;
+
+                if(localStorage.getItem('msges') === null) {
+                msges = [];
+                } else {
+
+                msges = JSON.parse(localStorage.getItem('msges'));
+
+                }
+
+                msges.push(message);
+
+                localStorage.setItem('msges', JSON.stringify(msges));
+                    
+                $("body").overhang({                        
+                    type: "success",
+                    message: " پیام شما با موفقیت درج شد ",                        
+                });
+            });
+            
+
+            const msges = JSON.parse(localStorage.getItem('msges'));
+            msges.forEach(function(message){
+                var row=$('<p></p>');
+                row.append(message);  
+                $(row).appendTo("#messages");
+                $("#messages").append('<hr>');            
+            });
+            
+            function messageShow(e){
+                var row=$('<p></p>');
+                row.append(e);  
+                $(row).appendTo("#messages");
+                $("#messages").append('<hr>');            
+            };
+
+        });
+    </script>
+
+</body>
+</html>
